@@ -16,6 +16,7 @@ patch:
     Shift_R: commit_code # 右 Shift，切换中英文
     Control_L: noop # 左 Control，屏蔽该切换键
     Control_R: noop # 右 Control，屏蔽该切换键
+  switcher/caption: "〔方案选单〕"
 
   key_binder/bindings: # 若开启, 去掉前面#
     # 翻页
