@@ -43,3 +43,9 @@ patch:
     #- { when: composing, accept: Control+b, send: Left }           # "Control+b" 移动光标
     #- { when: composing, accept: Control+f, send: Right }          # "Control+f" 向右选择候选词
     #- { when: composing, accept: Control+h, send: BackSpace }      # "Control+h" 删除输入码
+    
+  # 向识别器增加新的 patterns（不覆盖原有 patterns）
+  recognizer/patterns/+:
+    email: "^[A-Za-z][-_.0-9A-Za-z]*@.*$"
+    uppercase: "[A-Z][-_+.'0-9A-Za-z]*$"
+    url: "^(www[.]|https?:|ftp[.:]|mailto:|file:).*$|^[a-z]+[.].+$"
